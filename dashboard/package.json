@@ -1,0 +1,31 @@
+{
+  "name": "hydrophone-app-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "color": "^4.2.3",
+    "date-fns": "^2.29.3",
+    "lunarphase-js": "^1.0.10",
+    "plotly.js-cartesian-dist": "^2.18.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-plotly.js": "^2.6.0",
+    "suncalc": "^1.9.0"
+  },
+  "devDependencies": {
+    "@types/color": "^3.0.3",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@types/react-plotly.js": "^2.5.2",
+    "@types/suncalc": "^1.8.1",
+    "@vitejs/plugin-react": "^2.1.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0"
+  }
+}
