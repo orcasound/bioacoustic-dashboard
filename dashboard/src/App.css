@@ -1,0 +1,129 @@
+#root {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+}
+
+.App.desktop-layout {
+  display: flex;
+  gap: 3em;
+}
+
+.ContentWrapper {
+  flex-grow: 2;
+}
+
+.Navigation {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+}
+
+.settingsControls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.settingsControls select {
+  margin-left: .5em;
+}
+
+.DifferenceIndicator {
+  padding: 0 .5em;
+  font-size: .9em;
+}
+
+.DifferenceIndicator.good {
+  background: #e6f4ea;
+  color: #137333;
+}
+
+.DifferenceIndicator.increase:before {
+  content: "↑ ";
+}
+
+.DifferenceIndicator.bad {
+  background: #fce8e6;
+  color: #a50e0e;
+}
+
+.DifferenceIndicator.decrease:before {
+  content: "↓ ";
+}
+
+.DifferenceIndicator.neutral {
+  background: #efefef;
+  color: #999;
+}
+
+.DifferenceIndicator.partial {
+  background: #e2eef5;
+  color: rgb(19, 95, 194);
+}
+
+.DifferenceIndicator .minus {
+  display: none;
+}
+
+.StatusIndicator {
+  display: inline-block;
+  width: .6em;
+  height: .6em;
+  border-radius: 100%;
+}
+
+.StatusIndicator.good {
+  background: #159a42;
+}
+
+.StatusIndicator.warn {
+  background: #de8406;
+}
+
+.StatusIndicator.bad {
+  background: #cb0909;
+}
+
+.diffTable .value {
+  text-align: right;
+  padding-left: .5em;
+}
+
+.diffTable .difference {
+  text-align: left;
+  padding-right: .5em;
+}
+
+.diffTable tr:not(:first-child) th {
+  text-align: left;
+}
+
+.Introduction ul.status {
+  list-style-type: none;
+  padding: 0;
+}
+
+.CheckboxOptions label+label {
+  margin-left: .3em;
+}
+
+.StaticGraphicChart img {
+  max-width: 100%;
+  height: auto;
+}
+
+.ChartWrapper .buttons {
+  display: flex;
+  gap: .5em;
+  justify-content: center;
+}
